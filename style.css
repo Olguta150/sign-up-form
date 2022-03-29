@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Roboto:wght@400;500&display=swap');
+
+@font-face {
+    font-family: Norse;
+    src: url("Norse-Bold.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(17, 17, 17);
+}
+
+#container {
+    display: flex;
+    width: 1340px;
+    width: min(1340px, 100%);
+    height: 100vh;
+    margin: auto;
+    background: rgb(248, 246, 246);
+}
+
+.left-side {
+    width: 580px;
+    background-image: url(jose-figueroa-fqI1DsTS_0E-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-side .title {
+    position: relative;
+    top: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 10px;
+}
+
+.left-side .logo {
+    width: 80px;
+    height: 115px;
+}
+
+.left-side .text-logo {
+    font-family: Norse;
+    font-weight: bold;
+    font-size: 85px;
+    color: #fff;
+}
+
+.left-side .credit {
+    position: relative;
+    top: 770px;
+    margin-left: 120px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.left-side .credit a {
+    color: #fff;
+}
+
+.right-side {
+    width: 970px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.right-side .description {
+    padding: 155px 100px 0px 45px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+form {
+    margin-top: 60px;
+    padding: 20px 45px 25px;
+    color:rgb(63, 62, 62);
+    background: #fff;
+    box-shadow: 0px 3px 05px 0px rgb(49, 49, 49, 0.5);
+}
+
+form .form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+form label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    appearance: none;
+    font-size: 15px;
+    padding: 5px;
+    width: 240px;
+    border-radius: 4px;
+    border: 1px solid rgb(199, 198, 198);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    outline: blue;
+    border: 1px solid blue;
+    box-shadow: 1px 1px 5px 0 rgba(42, 66, 200, 0.3);
+}
+
+.pass-validation {
+    display: block;
+    font-size: 13px;
+    color: rgb(207, 5, 5);
+}
+
+form p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background: #596D48;
+    color: #fff;
+    border-radius: 9px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+    padding: 15px 50px;
+    margin: 40px 0 0 40px; 
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #63794f;
+}
+
+.log-in {
+    margin: 30px 0 0 40px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.log-in a {
+    text-decoration: none;
+    color: #596D48;
+    transition: color 0.3s ease-in-out;
+}
+
+.log-in a:hover {
+    color: #63794f;
+}
